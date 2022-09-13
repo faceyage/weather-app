@@ -5,7 +5,7 @@ import { api_key } from "./api_key"; //to not upload api_key to github
 //making api request and
 //returns weather data in json format
 async function makeRequest(location) {
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=${api_key}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=${api_key}`;
   const request = new Request(url);
   const response = await fetch(request, {
     mode: "cors",
