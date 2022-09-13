@@ -2,4 +2,3 @@ node_modules
 .vscode
 .eslintrc.js
 .prettierrc
-src/api_key.js
